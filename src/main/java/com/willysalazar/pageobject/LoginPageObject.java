@@ -2,35 +2,25 @@ package com.willysalazar.pageobject;
 
 import com.codeborne.selenide.SelenideElement;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPageObject {
-    private SelenideElement username() {
-        return $("#user-name"); // Waits until element gets text
-    }
-    private SelenideElement password() {
-        return $("#password"); // Waits until element gets text
-    }
-    private SelenideElement loginButton() {
-        return $("#login-button"); // Waits until element gets text
-    }
-    public SelenideElement title() {
-        return $("div>span.title"); // Waits until element gets text
-    }
-    public SelenideElement errorUserLocked() {
-        return $("div>h3"); // Waits until element gets text
-    }
+    SelenideElement username = $("#user-name");
+    SelenideElement password = $("#password");
+    SelenideElement loginButton = $("#login-button");
+    SelenideElement errorUserLocked = $("div>h3");
 
     public void doLogin(String user, String pass){
-        username().sendKeys(user);
-        password().sendKeys(pass);
-        loginButton().pressEnter();
+        username.sendKeys(user);
+        password.sendKeys(pass);
+        loginButton.pressEnter();
     }
 
+    public SelenideElement title() {
+        return $("div>span.title");
+    }
 
-
-
-
-
-
+    public SelenideElement getErrorUserLocked() {
+        return errorUserLocked;
+    }
 }
