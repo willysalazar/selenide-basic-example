@@ -2,39 +2,39 @@ package com.willysalazar.examples;
 
 import com.willysalazar.base.BaseConfig;
 import com.willysalazar.pageobject.LoginPageObject;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.text;
 
-public class LoginTest extends BaseConfig {
+@Feature("Login")
+class LoginTest extends BaseConfig {
 
     @Test
-    public void shouldHaveLoginWithStandardUser() {
+    void shouldHaveLoginWithStandardUser() {
         LoginPageObject loginPage = new LoginPageObject();
         loginPage.doLogin("standard_user", "secret_sauce");
         loginPage.title().shouldHave(text("Products"));
     }
 
     @Test
-    public void shouldHaveLoginWithProblemUser() {
+    void shouldHaveLoginWithProblemUser() {
         LoginPageObject loginPage = new LoginPageObject();
         loginPage.doLogin("problem_user", "secret_sauce");
         loginPage.title().shouldHave(text("Products"));
     }
 
     @Test
-    public void shouldHaveLoginWithPerformanceGlitchUser() {
+    void shouldHaveLoginWithPerformanceGlitchUser() {
         LoginPageObject loginPage = new LoginPageObject();
         loginPage.doLogin("performance_glitch_user", "secret_sauce");
         loginPage.title().shouldHave(text("Products"));
     }
 
     @Test
-    public void shouldHaveLoginWithLockedOutUser() {
+    void shouldHaveLoginWithLockedOutUser() {
         LoginPageObject loginPage = new LoginPageObject();
         loginPage.doLogin("locked_out_user", "secret_sauce");
-        loginPage.errorUserLocked().shouldHave(text("Epic sadface: Sorry, this user has been locked out."));
+        loginPage.getErrorUserLocked().shouldHave(text("Epic sadface: Sorry, this user has been locked out."));
     }
-
-
 }
