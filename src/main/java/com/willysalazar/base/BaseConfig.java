@@ -19,10 +19,6 @@ public abstract class BaseConfig {
 
     @BeforeEach
     public void preConditions(){
-        SelenideLogger.addListener("AllureSelenide",
-                new AllureSelenide()
-                        .screenshots(true) // add screenshot as attachments
-                        .savePageSource(true));
         Configuration.startMaximized = true;
         open("https://www.saucedemo.com/");
     }
