@@ -1,4 +1,4 @@
-package com.willysalazar.pageobject;
+package com.willysalazar.saucedemo.pageobject;
 
 import com.codeborne.selenide.ElementsCollection;
 

@@ -1,16 +1,16 @@
-package com.willysalazar.examples;
+package com.willysalazar.saucedemo;
 
 import com.codeborne.selenide.CollectionCondition;
-import com.willysalazar.base.BaseConfig;
-import com.willysalazar.pageobject.CartPageObject;
-import com.willysalazar.pageobject.InventoryPageObject;
-import com.willysalazar.pageobject.LoginPageObject;
+import com.willysalazar.saucedemo.base.BaseConfigSauceDemo;
+import com.willysalazar.saucedemo.pageobject.CartPageObject;
+import com.willysalazar.saucedemo.pageobject.InventoryPageObject;
+import com.willysalazar.saucedemo.pageobject.LoginPageObject;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
 
 @Feature("Add items to cart")
-class AddItemToCartTest extends BaseConfig {
+class AddItemToCartTest extends BaseConfigSauceDemo {
 
     @Test
     @Description("Should add backpack to cart and cart size to be one")
