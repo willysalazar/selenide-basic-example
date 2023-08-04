@@ -1,6 +1,5 @@
-package com.willysalazar.base;
+package com.willysalazar.theinternet.base;
 
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterAll;
@@ -10,7 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
-public abstract class BaseConfig {
+public abstract class BaseConfigTheInternet {
 
     @BeforeAll
     public static void setUp() {
@@ -19,8 +18,7 @@ public abstract class BaseConfig {
 
     @BeforeEach
     public void preConditions(){
-        Configuration.startMaximized = true;
-        open("https://www.saucedemo.com/");
+        open("https://the-internet.herokuapp.com/");
     }
 
 
