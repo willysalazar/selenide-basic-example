@@ -1,8 +1,5 @@
 # selenide-basic-example
-This project comes to help other new QAs in web automation, bringing examples of how to use Selenide.
-
-> Example project developed to perform automated tests on the website 
->> To collaborate with The Internet: https://github.com/saucelabs/the-internet
+This project comes to help other new QAs in web automation, bringing examples of how to use [Selenide](https://selenide.org/)
 
 ## How to use:
 
@@ -110,6 +107,7 @@ This project comes to help other new QAs in web automation, bringing examples of
 - WYSIWYG Editor (:warning:)
 
 ---
+
 ## Technologies:
 - Selenide
 - Java
@@ -121,9 +119,13 @@ This project comes to help other new QAs in web automation, bringing examples of
 ---
 
 ### Dependencies
-* *[selenide](https://www.selenium.dev/)*
-* *[testng](https://testng.org/)*
+* *[selenide](https://selenide.org/)*
+* *[junit5](https://junit.org/junit5/)*
 * *[lombok](https://projectlombok.org/)*
+* *[owner](https://matteobaccan.github.io/owner/)*
+* *[allure](https://docs.qameta.io/allure/)*
+
+
 
 ---
 
