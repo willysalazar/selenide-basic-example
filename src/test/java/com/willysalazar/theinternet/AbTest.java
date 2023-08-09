@@ -5,14 +5,16 @@ import com.willysalazar.theinternet.pageobject.AbPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class AbTest extends BaseConfigTheInternet {
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-    private static final String TITLE_AB_EXPECTED= "A/B Test";
+public class AbTest extends BaseConfigTheInternet {
 
     @Test
     public void shouldValidateABTest(){
         AbPage abPage = new AbPage();
-        String textTitleAb = abPage.clickLinkABTesting().getTextTitleAB();
-        Assertions.assertTrue(textTitleAb.startsWith(TITLE_AB_EXPECTED));
+        String textTitleAb = abPage
+                .clickLinkABTesting()
+                .getTextTitleAB();
+        Assertions.assertTrue(textTitleAb.startsWith("A/B Test"));
     }
 }

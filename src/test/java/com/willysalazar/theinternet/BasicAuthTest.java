@@ -15,6 +15,6 @@ public class BasicAuthTest extends BaseConfigTheInternet {
                         clickLinkBasicAuth().
                         navigateToBasicAuth("admin", "admin").
                         getTextTitleBasicAuth();
-        Assertions.assertEquals(titlePageAuthorized, "Basic Auth");
+        Assertions.assertEquals("Basic Auth", titlePageAuthorized);
     }
 }

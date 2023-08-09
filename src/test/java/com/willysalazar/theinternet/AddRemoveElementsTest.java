@@ -16,6 +16,6 @@ public class AddRemoveElementsTest extends BaseConfigTheInternet {
                         addElements().
                         deleteElements().
                         getTextTitleAddRemoveElements();
-        Assertions.assertEquals(textTitleAddRemoveElements,textTitleAddRemoveElements);
+        Assertions.assertEquals("Add/Remove Elements", textTitleAddRemoveElements);
     }
 }
