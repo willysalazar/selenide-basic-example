@@ -7,15 +7,10 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class AbPage {
 
-    SelenideElement linkTextABTesting = $(By.linkText("A/B Testing"));
-    SelenideElement titleAbPage = $(By.xpath("//*[@id='content']/div/h3"));
+    SelenideElement titleAbPage = $(By.tagName("h3"));
 
     public String getTextTitleAB() {
         return titleAbPage.getText();
     }
 
-    public AbPage clickLinkABTesting(){
-        linkTextABTesting.click();
-        return this;
-    }
 }

@@ -10,6 +10,7 @@ public class WelcomePage {
 
     SelenideElement titleWelcomePage = $(By.xpath("//h1"));
     SelenideElement subTitleWelcomePage = $(By.xpath("//h2"));
+    SelenideElement linkTextABTesting = $(By.linkText("A/B Testing"));
 
 
     public String getTitle() {
@@ -22,5 +23,9 @@ public class WelcomePage {
 
     public String getTextSubTitleAvailable() {
         return subTitleWelcomePage.getText();
+    }
+
+    public void clickLinkABTesting(){
+        linkTextABTesting.click();
     }
 }
