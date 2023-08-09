@@ -1,5 +1,6 @@
 package com.willysalazar.theinternet.base;
 
+import com.codeborne.selenide.Configuration;
 import com.willysalazar.config.ServerConfig;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,6 +12,8 @@ public abstract class BaseConfigTheInternet {
     @BeforeEach
     public void preConditions(){
         ServerConfig serverConfig = ConfigFactory.create(ServerConfig.class);
-        open(serverConfig.baseUrlTheInternet());
+        Configuration.baseUrl = serverConfig.baseUrlTheInternet();
+        open("");
+
     }
 }

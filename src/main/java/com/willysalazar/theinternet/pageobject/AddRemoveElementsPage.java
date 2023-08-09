@@ -8,18 +8,12 @@ import static com.codeborne.selenide.Selenide.$;
 public class AddRemoveElementsPage {
 
 
-    SelenideElement titleAddRemoveElementsPage = $(By.xpath("//*/h3"));
-    SelenideElement linkTextAddRemoveElements = $(By.linkText("Add/Remove Elements"));
+    SelenideElement titleAddRemoveElementsPage = $(By.tagName("h3"));
     SelenideElement buttonAddElement = $(By.xpath("//*[@id='content']/div/button"));
     SelenideElement buttonDelete = $(By.xpath("//*[@id='elements']/button"));
 
     public String getTextTitleAddRemoveElements() {
         return titleAddRemoveElementsPage.getText();
-    }
-
-    public AddRemoveElementsPage clickLinkAddRemoveElements(){
-        linkTextAddRemoveElements.click();
-        return this;
     }
 
     public AddRemoveElementsPage addElements(){

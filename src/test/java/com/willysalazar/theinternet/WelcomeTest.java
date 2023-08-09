@@ -12,19 +12,19 @@ public class WelcomeTest extends BaseConfigTheInternet {
     @Test
     public void shouldValidateTitleTheInternet() {
         String title = welcomePage.getTitle();
-        Assertions.assertEquals(title, "The Internet");
+        Assertions.assertEquals("The Internet", title);
     }
 
     @Test
     public void shouldValidateTitleWelcome() {
         String titleWelcome = welcomePage.getTextTitleWelcome();
-        Assertions.assertEquals(titleWelcome, "Welcome to the-internet");
+        Assertions.assertEquals( "Welcome to the-internet", titleWelcome);
     }
 
     @Test
     public void shouldValidateSubTitleAvailableExamples() {
         String titleWelcome = welcomePage.getTextSubTitleAvailable();
-        Assertions.assertEquals(titleWelcome, "Available Examples");
+        Assertions.assertEquals("Available Examples", titleWelcome);
 
     }
 }
