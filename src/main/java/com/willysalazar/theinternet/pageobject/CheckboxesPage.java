@@ -1,5 +1,6 @@
 package com.willysalazar.theinternet.pageobject;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
@@ -16,13 +17,15 @@ public class CheckboxesPage {
         return titleCheckboxes.getText();
     }
 
-    public CheckboxesPage clickCheckboxOne(){
-        checkbox1.click();
+    public CheckboxesPage selectCheckboxOne(boolean select){
+        checkbox1.setSelected(select);
+        checkbox1.shouldBe(Condition.selected);
         return this;
     }
 
-    public CheckboxesPage clickCheckboxTwo(){
-        checkbox2.click();
+    public CheckboxesPage selectCheckboxTwo(boolean select){
+        checkbox2.setSelected(select);
+        checkbox2.shouldBe(Condition.selected);
         return this;
     }
 
