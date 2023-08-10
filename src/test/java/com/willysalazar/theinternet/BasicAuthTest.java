@@ -21,17 +21,4 @@ public class BasicAuthTest extends BaseConfigTheInternet {
                         getTextTitleBasicAuth();
         Assertions.assertEquals("Basic Auth", titlePageAuthorized);
     }
-
-    @Disabled
-    @Test
-    //TODO need to update
-    public void shouldValidateBasicAuth_NotAuthorized(){
-        BasicAuthPage basicAuthPage = new BasicAuthPage();
-        open("basic_auth");
-        String titlePageNotAuthorized =
-                basicAuthPage.
-                        navigateToBasicAuth("admin", "123").
-                        getTextNotAuthorizedBasicAuth();
-        Assertions.assertEquals("Not Authorized", titlePageNotAuthorized);
-    }
 }
