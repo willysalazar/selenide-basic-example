@@ -18,9 +18,10 @@ public class CheckboxesTest extends BaseConfigTheInternet {
         CheckboxesPage checkboxesPage = new CheckboxesPage();
         String textTitleCheckboxes =
                 checkboxesPage.
-                        clickCheckboxOne().
-                        clickCheckboxTwo().
+                        selectCheckboxOne(true).
+                        selectCheckboxTwo(true).
                         getTextTitlCheckboxes();
+
         Assertions.assertEquals("Checkboxes",textTitleCheckboxes);
     }
 
