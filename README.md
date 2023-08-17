@@ -56,6 +56,7 @@ This project comes to help other new QAs in web automation, bringing examples of
 ### SauceDemo Example List
 > Example project developed to perform automated tests on the website [SauceDemo](https://www.saucedemo.com/)
 - Login (:white_check_mark:)
+- LoginParameterized (:white_check_mark:)
 - AddItemCart (:white_check_mark:)
 
 
@@ -66,7 +67,7 @@ This project comes to help other new QAs in web automation, bringing examples of
 - [Basic Auth](https://the-internet.herokuapp.com/basic_auth) (:white_check_mark:)
 - Broken Images (:warning:)
 - Challenging DOM (:warning:)
-- Checkboxes (:warning:)
+- [Checkboxes](https://the-internet.herokuapp.com/checkboxes) (:white_check_mark:)
 - Context Menu (:warning:)
 - Digest Authentication (user and pass: admin) (:warning:)
 - Disappearing Elements (:warning:)
@@ -78,7 +79,7 @@ This project comes to help other new QAs in web automation, bringing examples of
 - Entry Ad (:warning:)
 - Exit Intent (:warning:)
 - File Download (:warning:)
-- File Upload (:warning:)
+- [File Upload](https://the-internet.herokuapp.com/upload) (:white_check_mark:)
 - Floating Menu (:warning:)
 - Forgot Password (:warning:)
 - Form Authentication (:warning:)
