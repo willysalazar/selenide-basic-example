@@ -2,7 +2,7 @@ package com.willysalazar.saucedemo;
 
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
-import com.willysalazar.saucedemo.base.BaseConfigSauceDemo;
+import com.willysalazar.saucedemo.base.BaseConfig;
 import com.willysalazar.saucedemo.pageobject.CartPageObject;
 import com.willysalazar.saucedemo.pageobject.CheckoutPageObject;
 import com.willysalazar.saucedemo.pageobject.InventoryPageObject;
@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.screenshot;
 
 
 @Feature("Checkout item to finish")
-public class CheckoutCompleteTest extends BaseConfigSauceDemo {
+public class CheckoutCompleteTest extends BaseConfig {
 
     @Test
     @Description("Should checkout complete - Information, Overview and Complete Steps")

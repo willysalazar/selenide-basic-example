@@ -1,6 +1,6 @@
 package com.willysalazar.saucedemo;
 
-import com.willysalazar.saucedemo.base.BaseConfigSauceDemo;
+import com.willysalazar.saucedemo.base.BaseConfig;
 import com.willysalazar.saucedemo.pageobject.LoginPageObject;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.AfterEach;
@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 @Feature("Login")
-class LoginParameterizedTest extends BaseConfigSauceDemo {
+class LoginParameterizedTest extends BaseConfig {
 
     public static final String PASSWORD = "secret_sauce";
 
