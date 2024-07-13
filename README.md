@@ -36,7 +36,7 @@ This project comes to help other new QAs in web automation, bringing examples of
 > Execute the command to run only one test class in the project
 
 ```
-	$ mvn clean test -Dtest=<WelcomeTest>
+	$ mvn clean test -Dtest=<LoginTest>
 ```
 
 ---
@@ -55,57 +55,10 @@ This project comes to help other new QAs in web automation, bringing examples of
 ## Examples
 ### SauceDemo Example List
 > Example project developed to perform automated tests on the website [SauceDemo](https://www.saucedemo.com/)
-- Login (:white_check_mark:)
-- LoginParameterized (:white_check_mark:)
-- AddItemCart (:white_check_mark:)
-
-
-### The-Internet Example List
-> Example project developed to perform automated tests on the website [The-Internet](https://the-internet.herokuapp.com/)
-- [A/B Testing](https://the-internet.herokuapp.com/abtest) (:white_check_mark:)
-- [Add/Remove Elements](https://the-internet.herokuapp.com/add_remove_elements) (:white_check_mark:)
-- [Basic Auth](https://the-internet.herokuapp.com/basic_auth) (:white_check_mark:)
-- Broken Images (:warning:)
-- Challenging DOM (:warning:)
-- [Checkboxes](https://the-internet.herokuapp.com/checkboxes) (:white_check_mark:)
-- Context Menu (:warning:)
-- Digest Authentication (user and pass: admin) (:warning:)
-- Disappearing Elements (:warning:)
-- Drag and Drop (:warning:)
-- Dropdown (:warning:)
-- Dynamic Content (:warning:)
-- Dynamic Controls (:warning:)
-- Dynamic Loading (:warning:)
-- Entry Ad (:warning:)
-- Exit Intent (:warning:)
-- File Download (:warning:)
-- [File Upload](https://the-internet.herokuapp.com/upload) (:white_check_mark:)
-- Floating Menu (:warning:)
-- Forgot Password (:warning:)
-- Form Authentication (:warning:)
-- Frames (:warning:)
-- Geolocation (:warning:)
-- Horizontal Slider (:warning:)
-- Hovers (:warning:)
-- Infinite Scroll (:warning:)
-- Inputs (:warning:)
-- JQuery UI Menus (:warning:)
-- JavaScript Alerts (:warning:)
-- JavaScript onload event error (:warning:)
-- Key Presses (:warning:)
-- Large & Deep DOM (:warning:)
-- Multiple Windows (:warning:)
-- Nested Frames (:warning:)
-- Notification Messages (:warning:)
-- Redirect Link (:warning:)
-- Secure File Download (:warning:)
-- Shadow DOM (:warning:)
-- Shifting Content (:warning:)
-- Slow Resources (:warning:)
-- Sortable Data Tables (:warning:)
-- Status Codes (:warning:)
-- Typos (:warning:)
-- WYSIWYG Editor (:warning:)
+- Login
+- LoginParameterized
+- AddItemCart 
+- CheckoutCompleteTest
 
 ---
 
