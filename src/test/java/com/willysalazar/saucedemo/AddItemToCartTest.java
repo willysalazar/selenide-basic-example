@@ -7,6 +7,7 @@ import com.willysalazar.saucedemo.pageobject.InventoryPageObject;
 import com.willysalazar.saucedemo.pageobject.LoginPageObject;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 @Feature("Add items to cart")
@@ -24,6 +25,7 @@ class AddItemToCartTest extends BaseConfigSauceDemo {
         CartPageObject cartPageObject = new CartPageObject();
         cartPageObject.getCartItemsList()
                 .shouldHave(CollectionCondition.size(1));
+        cartPageObject.removeItemCart();
     }
 
 }
